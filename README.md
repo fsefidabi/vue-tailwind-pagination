@@ -4,7 +4,7 @@
 
 A VueJs pagination component, inspired by [react-pagination](https://github.com/mayankshubham/react-pagination) repository.
 
-### [Documentation and Demos]()
+### [Documentation and Demos](https://vue-tailwind-pagination.netlify.app/)
 
 ## Dependencies
 -   Vue.js (v2.x+)
