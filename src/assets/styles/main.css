@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vue-tailwind-pagination li:hover {
+  filter: saturate(2);
+}
