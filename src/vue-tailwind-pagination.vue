@@ -140,10 +140,6 @@ export default {
         return currentPage >= 1
       }
     },
-    loading: {
-      type: Boolean,
-      default: false,
-    },
     hasFirstLastButtons: {
       type: Boolean,
       default: true
@@ -236,7 +232,7 @@ export default {
         return [firstPageIndex, DOTS, ...rightRange]
       }
 
-      if (shouldShowLeftDots && shouldShowRightDots) {
+      if ((shouldShowLeftDots && shouldShowRightDots) || (!shouldShowLeftDots && !shouldShowRightDots)) {
         let middleRange = this.range(leftSiblingIndex, rightSiblingIndex)
         return [firstPageIndex, DOTS, ...middleRange, DOTS, lastPageIndex]
       }
